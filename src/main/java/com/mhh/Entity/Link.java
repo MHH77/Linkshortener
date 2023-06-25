@@ -8,7 +8,7 @@ import lombok.*;
 @Setter
 @AllArgsConstructor
 @RequiredArgsConstructor
-@NoArgsConstructor
+//@NoArgsConstructor
 public class Link {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
