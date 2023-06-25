@@ -11,8 +11,14 @@ import org.springframework.stereotype.Controller;
 public class LinKController {
     @Autowired
     private LinkService linkService;
-    public void insert(Link link) {
-        linkService.save_Link(link);
-        log.info("insert Method At linkService called.");
+
+    public Link insert(Link link) {
+        return linkService.save_Link(link);
     }
+
+    public void finByurl(String Url) {
+        linkService.findByUrl(Url);
+    }
+
+
 }
